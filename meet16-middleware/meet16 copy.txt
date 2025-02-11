@@ -1,0 +1,21 @@
+Middleware
+
+Yang akan dibahas pada pertemuan 16 ini antara lain:
+- Database
+- web server
+- Game engine
+- web application
+
+Skema web application 
+Request ==> App ==> response
+
+Express Middleware => merupakan aplikasi express itu sebenarnya berisi serangkaian pemanggilan fungsi Middleware
+Function Middleware => merupakan sebuah funsgi yang memiliki akses ke object request (req), obejct response (res),
+                    dan fungsi Middleware berikutnya (next)
+macam-macam express Middleware
+- User defined Middleware
+ * application-level Middleware
+ * router-level Middleware
+ * error-handling Middleware
+- Built in Middleware
+- third-party Middleware
