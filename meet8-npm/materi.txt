@@ -1,0 +1,10 @@
+NPM
+
+1. apa yang dimaksud dengan NPM?
+NPM (Node Package Manager) adalah 
+
+version (1.0.0) 
+digit 
+
+cara uninstall Package
+cth: npm uninstall validator

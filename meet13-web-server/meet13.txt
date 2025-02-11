@@ -1,0 +1,6 @@
+Web Server NodeJS
+Pada NodeJS menggunakan web server 3000, karena post ini belum ada yang makai
+port pada web server itu dari 1 - 6000. Namun kita tidak tahu port mana saja yang sudah dipakai
+Jadi, port 3000 biasanya sudah dipakai untuk standarisasi Node, Ruby, dst.
+
+bactic => itu adalah template literal pada NodeJS

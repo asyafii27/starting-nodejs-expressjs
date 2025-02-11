@@ -1,0 +1,25 @@
+Pengenalan Express JS
+- merupakan framework yang dibuat di atas NodeJS
+- meyediakan antarmuka yang minimal untuk kakas yang diperlukan dalam membuat sebuah aplikasi web
+- membantu pengelolaan aliran data dari server ke palikasis
+- MERN, MEAN, MEVN stock (MongoDB, Express JS, React | Angular | Vue, NodeJS)
+- Diciptakan oleh TJ HoloWaychuk, pada tanggal 22 Mei 2010.
+
+Fitur yang ada di Express
+- Menangani request dengan berbagai metode HTTP dengan mudah (Routes)
+- MVC (Model view controller)
+- Terintegrasi dengan "view" rendering engine, untuk mengelola template. Jadi, dia punya kayak blade nya laravel
+- Middleware 
+
+Database yang digunakan dalam express dapat berupa 
+Casandra
+Cauchbase 
+CouchDB
+LevelDB
+MySQL
+MongoDBNeo4j
+Oracle
+PostgreSQL
+Redis
+SQL Server SQLite
+ElasticSearch

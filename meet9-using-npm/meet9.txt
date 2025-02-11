@@ -1,0 +1,6 @@
+beberapa materi untuk library validator https://www.npmjs.com/package/validator
+
+nodemon digunakan untuk running app terus menerus tanpa melakukan running lagi
+cara uninstall package
+-- npm uninstall -g nodemon => ini untuk uninstall package secara general
+-- npm uninstall nodemon => ini untuk uninstall package secara local (hanya untuk projek saat ini)

@@ -1,0 +1,48 @@
+1. apa itu node js?
+Jawab: node js adalah sebuah runtime untuk membuat aplikasi yang asyncronous.
+nodeJS itu bukan bahasa pemrograman, tapi itu merupakan sebuha runtime.
+google chrome mempunyai javascript engine yang bernama v8 (hanya terbatas di dalam browser)
+
+yang membuat nodeJS adalah Ryan Dahl pada tahun 2008. 
+nodeJS apalikasi yang dapat diinstal di dalam sistem oprasi. sifatnya adalah asyncronous
+
+sifat-sifat yang ada pada nodeJS
+    - asyncronous dan event driven
+    - Non Blocking
+    - single threaded but highly scalable
+    - cross platform
+    - Mit License
+    - NPM (Node Package Manager) adalah sebuah kumpulan untuk menyimpan banyak library yang dapat ditambahkan pada aplikasi kita
+
+2. arsitektur nodeJS?
+File Utama pada NodeJS
+    a. File System
+    b. Buffer
+    c. Jttp dan Https
+    d. REPL
+    E. Console
+    f. Crypto
+    g. Zlib digunakan untuk kompressi
+
+
+NodeJS Vs PHP
+- nodeJS adalah runtime || PHP adalah bahasa pemrograman
+- NodeJS dibuat tahun 2009 || dibuat pada tahun 1994
+- Google's V8 engine || Zend engine
+- eksekusi kode Multi-thread, syncronous || single-thread, asyncronous
+- web server berjalan di runtime sendiri || web server apache/IIS
+- Package manager npm || Package manager composer
+
+NodeJs cocok untuk?
+- dynamic single page application (SPA)
+- realtime App (chat, multiplayer)
+- Aplikasi
+- streaming application
+- microservies
+- command line tool
+- MERN, MEAN, MEVN
+
+ilmu apa yang harus dipelajari sebelum belajar NodeJS
+- javascript dasar
+- apa javascript lanjutan (modern JS/ES6)
+

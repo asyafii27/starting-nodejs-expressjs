@@ -1,0 +1,20 @@
+Modules
+
+1. Pengertian Modules
+    - Modules merupakan sekumpulan kode yang dapat digunakan kembali, dengan antar muka yang terdefinisi
+    - Node Modules merupakan Fungsionalitas yang simpel ataupun kompleks yang tersimapan di dalam sebuah file javascript yang dpaat kita gunakan kembali pada aplikasi NodeJS
+        - Setiap Modules di dalam NodeJS memiliki konteks nya masing -masing, tidak bisa saling tercampur dengan modul lain pada lingkup global
+2. tipe Modules
+    - core Modules
+        - module yang sudah ditentukan
+    - Local Modules 
+        - module yang bikin sendiri
+    - third party Modules
+        - modul yang telah dibikinkan oleh orang lain
+3. komponen
+    - require(), fungsi requiremencari modul dengan urutan sebagai berikut
+        1. core module
+        2. File atau direktori (./ atau / atau ../)
+        3. Folder 'node_modules'
+
+4. contructor() adalah metode yang otomatis dipanggil ketika kelas tersebut diinstasiasi
