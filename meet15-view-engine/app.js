@@ -1,22 +1,33 @@
 const express = require('express');
+const expressLayouts = require('express-ejs-layouts');
 const app = express();
 const port = 3000;
 
 // gunakan ejs
 app.set('view engine', 'ejs');
-
+app.use(expressLayouts); // ini untuk layouting
 
 app.get('/', (req, res) => {
-    // res.sendFile('./index.html', {root: __dirname})
     res.render('index', {
+        layout: 'layouts/main-layout',
         name: 'Ahmad Syafii',
-        title: 'Home'
+        title: 'Home Page'
     });
 })
 
 app.get('/about', (req, res) => {
-    res.render('about');
-  })
+    res.render('about', {
+        layout: 'layouts/main-layout',
+        title: 'About Page'
+    });
+  });
+
+app.get('/contact', (req, res) => {
+    res.render('contact', {
+        layout: 'layouts/main-layout',
+        title: 'Contact Page'
+    });
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
@@ -30,9 +41,6 @@ app.get('/cek-query', (req, res) => {
     res.send(`query: ${req.query.category}` )
 })
 
-app.get('/contact', (req, res) => {
-    res.render('contact');
-})
 
 app.get('/mahasiswa', (req, res) => {
     const mahasiswa = [
