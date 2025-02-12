@@ -1,12 +1,25 @@
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
+const morgan = require('morgan');
 const app = express();
 const port = 3000;
 
 // gunakan ejs
 app.set('view engine', 'ejs');
-app.use(expressLayouts);
 
+// Third party middleware
+app.use(expressLayouts);
+app.use(morgan('dev'))
+
+
+// application level middleware
+app.use((req, res, next) => {
+    console.log('Time:', Date.now())
+    next();
+});
+
+// Built in middleware 
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.render('index', {
@@ -23,12 +36,16 @@ app.get('/about', (req, res) => {
     });
   });
 
+
+
+
 app.get('/contact', (req, res) => {
     res.render('contact', {
         layout: 'layouts/main-layout',
         title: 'Contact Page'
     });
 });
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
@@ -67,5 +84,10 @@ app.get('/mahasiswa', (req, res) => {
 
 app.use('/', (req, res) => { 
     res.send('<h1>404. Page Not Found</h1>');
+    console.log('middleware 404');
+});
+
+app.use((req, res, next) => {
+    console.log('middleware ke-2')
 });
 
